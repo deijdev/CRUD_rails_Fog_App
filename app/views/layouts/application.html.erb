@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <body>
+  <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %>
+    <div style="margin: auto"><%= yield %></div>
+  </body>
+</html>

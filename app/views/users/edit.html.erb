@@ -1,0 +1,14 @@
+<h1> Edit the User </h1>
+
+<%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+        <h4>Add Game</h4>
+     
+         <div><%= f.collection_select :game_ids, Game.all, :id, :title %></div>
+         
+        
+
+    <%= f.submit "update user" %>
+<% end %>
