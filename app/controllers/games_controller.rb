@@ -1,5 +1,6 @@
 class GamesController < ApplicationController
     before_action :find_game, only: [:show, :edit]
+
     def index 
         @games = Game.all
     end
@@ -44,6 +45,6 @@ class GamesController < ApplicationController
     end
 
     def game_params
-        params.require(:game).permit(:title)
+        params.require(:game).permit(:title, :img)
     end
 end

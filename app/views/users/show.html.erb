@@ -3,8 +3,9 @@
 <h4>User Games</h4>
 <body>
 
-<% @user.games.each do |game| %>
- <div><%= game.title %></div>
+<% @user.libraries.each do |lib| %>
+ <div id="user_games"><h4><%=link_to lib.game.title, game_path(lib.game)%></h4><%= image_tag lib.game.img %><br><%= link_to "Remove " + lib.game.title, library_path(lib), :method => :delete %></div>
+
 <% end %>
 
 

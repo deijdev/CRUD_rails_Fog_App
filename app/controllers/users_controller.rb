@@ -1,12 +1,25 @@
 class UsersController < ApplicationController
+    # before_action :find_user, only: :edit
     before_action :find_user, only: [:show, :edit]
+    @@user = nil
 
-    def index 
+    def index
+         @@user
         @users = User.all
     end
     
+    def login_show
+       
+    end
+
+    def loggedin
+       
+        @@user = User.find_by(name: params[:name])
+        redirect_to users_path
+    end
 
     def show
+        # @user = User.find_by(name: params[:name])
     end
 
     def new
@@ -26,13 +39,17 @@ class UsersController < ApplicationController
     end
 
     def edit
-        2.times {@user.games.build}
+        @user.games.build
     end
 
     def update
         user = find_user
+        game = Game.find(params[:user][:game_ids])
+        # byebug
+        user.games << game
+        user.save
+        user.update(name: params[:name])
         
-        user.update(user_params)
         redirect_to user_path(user)
     end
     

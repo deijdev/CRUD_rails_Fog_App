@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 4) do
 
   create_table "games", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "img", default: "https://images.getbento.com/KTdg2WnFRWO8NPQ9Z8J6_Blank_Slate_Logo_Plain_Black.png"
   end
 
   create_table "libraries", force: :cascade do |t|

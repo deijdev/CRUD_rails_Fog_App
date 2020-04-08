@@ -1,6 +1,10 @@
+<div id="show">
 <h2><%= @game.title %></h2>
+    <%=image_tag @game.img %>
+    
 <p><%= @game.users.count %> user(s) have added this game.</p>
 
 
 <%= link_to "Edit Game", edit_game_path(@game) %> |
 <%= link_to "Delete Game", game_path(@game), :method => :delete %>
+</div>
