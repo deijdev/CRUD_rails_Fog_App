@@ -1,0 +1,6 @@
+<% if new_object.errors %>
+    <% new_object.errors.full_messages.each do |m| %>
+   ** <%= m %> **
+    <% end %>
+
+<% end %>

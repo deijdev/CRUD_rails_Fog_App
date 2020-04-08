@@ -9,8 +9,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   
-  <body>
-  <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %>
-    <div style="margin: auto"><%= yield %></div>
+  <body style="height: 100%">
+    <div id="nav">
+      <div id="nav_logo">
+        <%= image_tag 'fog_logo.png' %><div style="float: right; padding-top: 8px; font-size: 30px;">FOG GAMES</div>
+      </div>
+      <div id="nav_links">
+        <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %>
+      </div>
+    </div>
+    <%= yield %>
   </body>
 </html>

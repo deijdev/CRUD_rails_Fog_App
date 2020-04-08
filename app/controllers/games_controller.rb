@@ -13,8 +13,13 @@ class GamesController < ApplicationController
     end
 
     def create 
-        game = Game.create(game_params)
-        redirect_to game_path(game)
+        @game = Game.create(game_params)
+        if @game.valid?
+            @game.save
+            redirect_to game_path(@game)
+        else 
+            render :new
+        end
     end
 
     def edit 
