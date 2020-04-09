@@ -70,15 +70,15 @@
     border: 0px;
     margin: 0px;
     padding-top: 0px;
-    height: 100%;
+    height: calc(100% - 60px);
     width: 100%;
     color: white;
     text-shadow: 5px 2px 10px black;
     background-color: black;
     background-image: url("about_back.jpg");
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
 
 }
@@ -112,11 +112,20 @@ body {
 }
 
 #user_games {
+    overflow: hidden;
     margin: 15px;
 }
 #user_games img {
+    
     width: 300px;
+    /* overflow: hidden; */
+    margin-top: -25px;
+    margin-bottom: 5px;
 }
+#user_games img:hover {
+    width: 400px;
+}
+
 
 .error {
     color: red;

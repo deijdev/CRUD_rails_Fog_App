@@ -31,8 +31,10 @@ class UsersController < ApplicationController
         @user = User.create(user_params)
         if @user.valid? 
             @user.save
+            session[:user_id] = @user.id
             redirect_to user_path(@user)
         else 
+            flash[:register_errors] = @user.errors.full_messages
             render :new
         end
         # redirect_to user_path(@user)
@@ -44,11 +46,12 @@ class UsersController < ApplicationController
 
     def update
         user = find_user
-        game = Game.find(params[:user][:game_ids])
+        # byebug
+        game = Game.find(user_params[:game_ids])
         # byebug
         user.games << game
         user.save
-        user.update(name: params[:name])
+        user.update(name: user_params[:name])
         
         redirect_to user_path(user)
     end
@@ -62,7 +65,8 @@ class UsersController < ApplicationController
     private 
 
     def user_params
-        params.require(:user).permit(:name, :game_ids)
+        
+        params.require(:user).permit(:name, :email, :password, :password_confirmation, :game_ids)
     end
 
     def find_user

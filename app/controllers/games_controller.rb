@@ -39,6 +39,14 @@ class GamesController < ApplicationController
         redirect_to games_path
     end
 
+    def buy
+        # byebug
+        game = find_game
+        user = session[:user_id]
+        Library.create(game: game, user_id: user)
+        redirect_to user_path(user)
+    end
+
     private
     def find_game
         @game = Game.find(params[:id])

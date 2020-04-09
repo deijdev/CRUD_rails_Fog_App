@@ -17074,3 +17074,2976 @@ Processing by LibrariesController#show as HTML
 Completed 200 OK in 626ms (Views: 425.3ms | ActiveRecord: 27.5ms | Allocations: 6224380)
 
 
+Started GET "/" for ::1 at 2020-04-08 18:21:09 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 324)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 70.4ms | ActiveRecord: 0.0ms | Allocations: 22842)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:09:33 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 10910)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:09:45 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3641)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 0.9ms | Allocations: 10650)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:10:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.4ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 28.5ms | Allocations: 15385)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 32.1ms | ActiveRecord: 2.7ms | Allocations: 22965)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:11:04 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4573)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:11:05 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 687)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5273)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:11:06 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4557)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:11:07 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5244)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:11:08 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.5ms | Allocations: 6246)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:11:09 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 690)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 5279)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:11:09 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4571)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:11:10 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5463)
+
+
+Started GET "/games/new" for ::1 at 2020-04-08 20:11:11 -0400
+Processing by GamesController#new as HTML
+  Rendering games/new.html.erb within layouts/application
+  Rendered games/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 7410)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 20:11:13 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.8ms | Allocations: 174)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5770)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:11:14 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5475)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:11:14 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5250)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:11:15 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4566)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:12:46 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 5247)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:12:48 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 5243)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:12:49 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5460)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 20:12:52 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 36.2ms | Allocations: 5242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.4ms | Allocations: 10469)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-04-08 20:12:59 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6097)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:13:14 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 5466)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 20:13:15 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 6065)
+
+
+Started GET "/games/1/edit" for ::1 at 2020-04-08 20:13:22 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 639)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms | Allocations: 5709)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:13:31 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5262)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:13:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3064)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 8131)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:14:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.4ms | Allocations: 26325)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:16:35 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.5ms | Allocations: 18753)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:16:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 16.6ms | Allocations: 3063)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.4ms | Allocations: 19164)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:17:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.5ms | Allocations: 18736)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:18:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms | Allocations: 17541)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:18:32 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.4ms | Allocations: 17506)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:18:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.4ms | Allocations: 18755)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:19:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.4ms | Allocations: 18782)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-04-08 20:19:18 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.4ms | Allocations: 10756)
+
+
+Started PATCH "/users/2" for ::1 at 2020-04-08 20:19:22 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"lqIDWav6paXG/Y+IWi8yeZLdgXDqryplIL1K+KDPLP7MbCvP4fRoXZwp57bdjvL3+IZz6HC5BGZJ9Wix4AXh+g==", "user"=>{"name"=>"Alex", "game_ids"=>"3"}, "commit"=>"update user", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:49:in `update'
+  [1m[36mLibrary Create (0.9ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 3], ["created_at", "2020-04-09 00:19:22.200284"], ["updated_at", "2020-04-09 00:19:22.200284"]]
+  ↳ app/controllers/users_controller.rb:49:in `update'
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:49:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "Alex"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms | Allocations: 10540)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 20:19:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3840)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 8912)
+
+
+Started GET "/games/6" for ::1 at 2020-04-08 20:23:38 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 6]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 6078)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:23:45 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4564)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:23:47 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5250)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:23:48 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5463)
+
+
+Started GET "/games/5" for ::1 at 2020-04-08 20:23:49 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 5]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 6061)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:23:53 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 5460)
+
+
+Started GET "/games/3" for ::1 at 2020-04-08 20:23:54 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 3]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 991)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.3ms | Allocations: 6060)
+
+
+Started GET "/games/3/edit" for ::1 at 2020-04-08 20:24:00 -0400
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/edit.html.erb within layouts/application
+  Rendered games/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 641)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5712)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:24:02 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4551)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:25:34 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 14378)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:26:28 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 14283)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:26:47 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 15177)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:31:51 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4550)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:31:53 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 5251)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:31:55 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4556)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:01 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5246)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:32:01 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5463)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:02 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5243)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:32:04 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4556)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:05 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5247)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:32:08 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5462)
+
+
+Started GET "/games/new" for ::1 at 2020-04-08 20:32:09 -0400
+Processing by GamesController#new as HTML
+  Rendering games/new.html.erb within layouts/application
+  Rendered games/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 708)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5282)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 20:32:10 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5036)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:32:11 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5469)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:11 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5249)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:32:12 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 4555)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:32:44 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4553)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:50 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms | Allocations: 5250)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:32:51 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5459)
+
+
+Started GET "/games/new" for ::1 at 2020-04-08 20:32:52 -0400
+Processing by GamesController#new as HTML
+  Rendering games/new.html.erb within layouts/application
+  Rendered games/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 708)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5282)
+
+
+Started GET "/games" for ::1 at 2020-04-08 20:32:53 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5465)
+
+
+Started GET "/users" for ::1 at 2020-04-08 20:32:54 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 5252)
+
+
+Started GET "/" for ::1 at 2020-04-08 20:32:55 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4552)
+
+
+Started GET "/users" for ::1 at 2020-04-08 21:18:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3063)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 9228)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 21:18:30 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 13119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.7ms | Allocations: 18213)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-04-08 21:18:33 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 8694)
+
+
+Started PATCH "/users/2" for ::1 at 2020-04-08 21:18:38 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"9s8OlnOqY055L4XSoIPQs6TM4VmfYGRk3n1frH18fECsASYAOaSutiP77ewnIhA9zpcTwQV2Sme3NX3lPbaxRA==", "user"=>{"name"=>"Alex", "game_ids"=>"1"}, "commit"=>"update user", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+Completed 500 Internal Server Error in 108957ms (ActiveRecord: 0.1ms | Allocations: 49889)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/users_controller.rb:48:in `update'
+Started PATCH "/users/2" for ::1 at 2020-04-08 21:20:43 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"wMdt1ZeYgXHpfG5C0YFmExsebeU5twZvsGEdU3C1eRWt+DUqXDOl0INJouRri4A7b+U+xlp4RWvYI6CjWnH3oQ==", "user"=>{"name"=>"Alex D", "game_ids"=>"1"}, "commit"=>"update user", "id"=>"2"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `update'
+  [1m[35m (3.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[36mLibrary Create (0.9ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 1], ["created_at", "2020-04-09 01:20:44.656696"], ["updated_at", "2020-04-09 01:20:44.656696"]]
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[36mUser Exists? (4.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "Alex"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" IS NULL AND "users"."id" != ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 439ms (ActiveRecord: 29.4ms | Allocations: 4738957)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 21:20:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.0ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (4.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 176.6ms | Allocations: 1968716)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 284ms (Views: 247.8ms | ActiveRecord: 12.1ms | Allocations: 3165606)
+
+
+Started DELETE "/libraries/27" for ::1 at 2020-04-08 21:20:51 -0400
+Processing by LibrariesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8Xq9d/+wR7bWIQpywxUNnrTPaPqnufdni3xQXWi3uHicReWINBtjF7wUxtR5H+u2wDQ72cR2tGPjPu2tQnM2zA==", "id"=>"27"}
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:8:in `destroy'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:9:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[36mLibrary Destroy (1.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 129ms (ActiveRecord: 5.0ms | Allocations: 1316393)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 21:20:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 165.5ms | Allocations: 1873491)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 256.6ms | ActiveRecord: 8.2ms | Allocations: 3386039)
+
+
+Started GET "/users" for ::1 at 2020-04-08 21:23:27 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 81.0ms | Allocations: 1012236)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 157.0ms | ActiveRecord: 9.4ms | Allocations: 2727121)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 21:23:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (4.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 342.6ms | Allocations: 4227168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 455ms (Views: 404.5ms | ActiveRecord: 19.9ms | Allocations: 5661140)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-04-08 21:23:35 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (4.6ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 104.7ms | Allocations: 1194314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 247ms (Views: 185.3ms | ActiveRecord: 6.8ms | Allocations: 2840456)
+
+
+Started PATCH "/users/2" for ::1 at 2020-04-08 21:23:41 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"LN22FcSSpd2LXKu82nKCGbEL6iHn7O4afW8u4ykO89t2E56DjpxoJdGIw4Jd00KX21AYuX36wBkUJwyqacQ+3w==", "user"=>{"name"=>"AlexD", "game_ids"=>"1"}, "commit"=>"update user", "id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `update'
+Completed 500 Internal Server Error in 162286ms (ActiveRecord: 1.7ms | Allocations: 862364)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/users_controller.rb:50:in `update'
+Started GET "/users/2" for ::1 at 2020-04-08 21:26:32 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (4.6ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (4.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 374.2ms | Allocations: 4229598)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 616ms (Views: 440.1ms | ActiveRecord: 44.3ms | Allocations: 6929095)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-04-08 21:26:39 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (5.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 105.7ms | Allocations: 1194314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 249ms (Views: 188.1ms | ActiveRecord: 7.2ms | Allocations: 2842934)
+
+
+Started PATCH "/users/2" for ::1 at 2020-04-08 21:26:55 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"Bfl9zn9dBDAIZxkMiYQq76sF1TI9dQIoljHAoVzBQSxfN1VYNVPJyFKzcTIOJephwV4nqqdjLCv/eeLoHAuMKA==", "user"=>{"name"=>"NFamous Wun", "game_ids"=>"9"}, "commit"=>"update user", "id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:48:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[36mLibrary Create (1.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 9], ["created_at", "2020-04-09 01:26:57.781438"], ["updated_at", "2020-04-09 01:26:57.781438"]]
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[36mUser Exists? (4.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "Alex"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:51:in `update'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "NFamous Wun"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "NFamous Wun"], ["updated_at", "2020-04-09 01:26:57.952543"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 654ms (ActiveRecord: 32.0ms | Allocations: 7349794)
+
+
+Started GET "/users/2" for ::1 at 2020-04-08 21:26:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:71:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (4.4ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (4.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mGame Load (4.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 233.4ms | Allocations: 2533537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 380ms (Views: 325.0ms | ActiveRecord: 18.6ms | Allocations: 4067562)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnToUser (20200409030145)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "password" digest[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409030145"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (1)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "1"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLibraries (2)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "libraries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "game_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "2"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGames (3)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "games" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "3"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddColumnToGame (4)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "games" ADD "img" text DEFAULT 'https://images.getbento.com/KTdg2WnFRWO8NPQ9Z8J6_Blank_Slate_Logo_Plain_Black.png'[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "4"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddColumnToUser (20200409030145)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "email" varchar[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409030145"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 03:04:03.934758"], ["updated_at", "2020-04-09 03:04:03.934758"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "T"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "T"], ["created_at", "2020-04-09 03:04:18.284189"], ["updated_at", "2020-04-09 03:04:18.284189"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alex"], ["created_at", "2020-04-09 03:04:18.287656"], ["updated_at", "2020-04-09 03:04:18.287656"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Deijah"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deijah"], ["created_at", "2020-04-09 03:04:18.291136"], ["updated_at", "2020-04-09 03:04:18.291136"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "NBA2k20"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "NBA2k20"], ["created_at", "2020-04-09 03:04:18.297741"], ["updated_at", "2020-04-09 03:04:18.297741"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Doom"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Doom"], ["created_at", "2020-04-09 03:04:18.301413"], ["updated_at", "2020-04-09 03:04:18.301413"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "The Division 2"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "The Division 2"], ["created_at", "2020-04-09 03:04:18.305093"], ["updated_at", "2020-04-09 03:04:18.305093"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Mariot Kart"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Mariot Kart"], ["created_at", "2020-04-09 03:04:18.308513"], ["updated_at", "2020-04-09 03:04:18.308513"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Animal Crossing"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Animal Crossing"], ["created_at", "2020-04-09 03:04:18.311960"], ["updated_at", "2020-04-09 03:04:18.311960"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Outlast"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Outlast"], ["created_at", "2020-04-09 03:04:18.315148"], ["updated_at", "2020-04-09 03:04:18.315148"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["game_id", 1], ["created_at", "2020-04-09 03:04:18.322180"], ["updated_at", "2020-04-09 03:04:18.322180"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["game_id", 2], ["created_at", "2020-04-09 03:04:18.324826"], ["updated_at", "2020-04-09 03:04:18.324826"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["game_id", 3], ["created_at", "2020-04-09 03:04:18.327464"], ["updated_at", "2020-04-09 03:04:18.327464"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 2], ["created_at", "2020-04-09 03:04:18.329934"], ["updated_at", "2020-04-09 03:04:18.329934"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 3], ["created_at", "2020-04-09 03:04:18.332339"], ["updated_at", "2020-04-09 03:04:18.332339"]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["game_id", 4], ["created_at", "2020-04-09 03:04:18.334899"], ["updated_at", "2020-04-09 03:04:18.334899"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["game_id", 3], ["created_at", "2020-04-09 03:04:18.337110"], ["updated_at", "2020-04-09 03:04:18.337110"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["game_id", 5], ["created_at", "2020-04-09 03:04:18.339450"], ["updated_at", "2020-04-09 03:04:18.339450"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["game_id", 6], ["created_at", "2020-04-09 03:04:18.341817"], ["updated_at", "2020-04-09 03:04:18.341817"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/new" for ::1 at 2020-04-08 23:24:12 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.6ms | Allocations: 917)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4911)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 100.9ms | ActiveRecord: 0.5ms | Allocations: 48250)
+
+
+Started POST "/users" for ::1 at 2020-04-08 23:28:57 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"ak6FHDiV/VZ28YVTBYSDPaiS110qUACWhIibI/JGxugJQK+Jjwx3/+b4r2XSOZilfoWxe0Y6bgMghlpj3GYNeA==", "user"=>{"name"=>"nfamouswun", "email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Join FOG"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "nfamouswun"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "nfamouswun"], ["created_at", "2020-04-09 03:28:57.631387"], ["updated_at", "2020-04-09 03:28:57.631387"], ["email", "alexduterte@gmail.com"], ["password_digest", "$2a$12$P8bC3bO51RH4NnZZuQ68gut4FzZUrQkzH3J2q87H5Y69gcClFbcAi"]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "nfamouswun"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "nfamouswun"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 225ms (ActiveRecord: 1.8ms | Allocations: 11786)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:28:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4411)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 9854)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-04-08 23:34:45 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4964)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 23:34:48 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 11118)
+
+
+Started POST "/sessions" for ::1 at 2020-04-08 23:35:00 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/sessions" for ::1 at 2020-04-08 23:35:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"QsfLF5HsWqkeA6tSF0UZ1i/T9Ion4gm8jwb34EzQqowhyeGCJnXQAI4KgWTA+AJO+cSSrEuIZykrCDagYvBhHA==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.5ms | Allocations: 8455)
+
+
+  
+NoMethodError (undefined method `user_id' for #<User:0x00007fc8d29bb9d0>):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/sessions" for ::1 at 2020-04-08 23:36:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"QsfLF5HsWqkeA6tSF0UZ1i/T9Ion4gm8jwb34EzQqowhyeGCJnXQAI4KgWTA+AJO+cSSrEuIZykrCDagYvBhHA==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 191ms (ActiveRecord: 0.5ms | Allocations: 6450)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:36:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2370)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 7728)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 23:36:32 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1298)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5885)
+
+
+Started POST "/sessions" for ::1 at 2020-04-08 23:36:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"CfJZIdCrEa/KA0UkDImuHiAwdesoyAv7bxFaUmqobZdq/HO0ZzKbBloKbxLbNLWG9icTzUSiZW7LH5sSRIimBw==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 205ms (ActiveRecord: 0.1ms | Allocations: 964)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 23:36:38 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1073)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 5671)
+
+
+Started POST "/sessions" for ::1 at 2020-04-08 23:36:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YMhGIKdNuMiCEZOacutOdFJJc/Ea+m24mcbwtfW3aIUDxmy1ENQyYRIYuaylVlXshF4V13aQAy09yDH125ejFQ==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 199ms (ActiveRecord: 0.1ms | Allocations: 944)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:36:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 5.6ms | ActiveRecord: 0.2ms | Allocations: 5831)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 23:41:07 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1288)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2483)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="user_login">
+    <div class="new_user">
+        <h1> Create a User </h1>
+
+        <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+
+        <%= form_for @user do |f| %>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label "Enter Password" %>
+            <%= f.text_field :password %>
+            <%= f.label "Confirm Password" %>
+            <%= f.text_field :password_confirmation %>
+            <%= f.submit "Join FOG" %>
+        <% end %>
+    </div>
+    <div class="log_in">
+            <form action="/sessions" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="email" name="login[email]" placeholder="email">
+            <input type="password" name="login[password]" placeholder="password">
+            <input type="submit" class="submit">
+            </form>
+
+        <div class="errors">
+            <% if flash[:login_errors] %>
+                <% flash[:login_errors].each do |error| %>
+                <p><%= error %></p>
+            <% end %>
+        </div>
+    </div>
+
+</div>
+):
+1:    <div id="user_login">
+2:        <div class="new_user">
+3:            <h1> Create a User </h1>
+4:    
+5:            <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+6:    
+7:            <%= form_for @user do |f| %>
+8:                <%= f.label :name %>
+9:                <%= f.text_field :name %>
+10:                <%= f.label :email %>
+11:                <%= f.text_field :email %>
+12:                <%= f.label "Enter Password" %>
+13:                <%= f.text_field :password %>
+14:                <%= f.label "Confirm Password" %>
+15:                <%= f.text_field :password_confirmation %>
+16:                <%= f.submit "Join FOG" %>
+17:            <% end %>
+18:        </div>
+19:        <div class="log_in">
+20:                <form action="/sessions" method="POST">
+21:                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+22:                <input type="email" name="login[email]" placeholder="email">
+23:                <input type="password" name="login[password]" placeholder="password">
+24:                <input type="submit" class="submit">
+25:                </form>
+26:    
+27:            <div class="errors">
+28:                <% if flash[:login_errors] %>
+29:                    <% flash[:login_errors].each do |error| %>
+30:                    <p><%= error %></p>
+31:                <% end %>
+32:            </div>
+33:        </div>
+34:    
+35:    </div>
+  
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2020-04-08 23:41:24 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1272)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1719)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="user_login">
+    <div class="new_user">
+        <h1> Create a User </h1>
+
+        <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+
+        <%= form_for @user do |f| %>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label "Enter Password" %>
+            <%= f.text_field :password %>
+            <%= f.label "Confirm Password" %>
+            <%= f.text_field :password_confirmation %>
+            <%= f.submit "Join FOG" %>
+        <% end %>
+    </div>
+    <div class="log_in">
+            <form action="/sessions" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="email" name="login[email]" placeholder="email">
+            <input type="password" name="login[password]" placeholder="password">
+            <input type="submit" class="submit">
+            </form>
+
+        <div class="errors">
+            <% if flash[:login_errors] %>
+                <% flash[:login_errors].each do |error| %>
+                <p><%= error %></p>
+            <% end %>
+        </div>
+    </div>
+
+</div>
+):
+1:    <div id="user_login">
+2:        <div class="new_user">
+3:            <h1> Create a User </h1>
+4:    
+5:            <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+6:    
+7:            <%= form_for @user do |f| %>
+8:                <%= f.label :name %>
+9:                <%= f.text_field :name %>
+10:                <%= f.label :email %>
+11:                <%= f.text_field :email %>
+12:                <%= f.label "Enter Password" %>
+13:                <%= f.text_field :password %>
+14:                <%= f.label "Confirm Password" %>
+15:                <%= f.text_field :password_confirmation %>
+16:                <%= f.submit "Join FOG" %>
+17:            <% end %>
+18:        </div>
+19:        <div class="log_in">
+20:                <form action="/sessions" method="POST">
+21:                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+22:                <input type="email" name="login[email]" placeholder="email">
+23:                <input type="password" name="login[password]" placeholder="password">
+24:                <input type="submit" class="submit">
+25:                </form>
+26:    
+27:            <div class="errors">
+28:                <% if flash[:login_errors] %>
+29:                    <% flash[:login_errors].each do |error| %>
+30:                    <p><%= error %></p>
+31:                <% end %>
+32:            </div>
+33:        </div>
+34:    
+35:    </div>
+  
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2020-04-08 23:41:58 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1283)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2478)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="user_login">
+    <div class="new_user">
+        <h1> Create a User </h1>
+
+        <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+
+        <%= form_for @user do |f| %>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label "Enter Password" %>
+            <%= f.text_field :password %>
+            <%= f.label "Confirm Password" %>
+            <%= f.text_field :password_confirmation %>
+            <%= f.submit "Join FOG" %>
+        <% end %>
+    </div>
+    <div class="log_in">
+            <form action="/sessions" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="email" name="login[email]" placeholder="email">
+            <input type="password" name="login[password]" placeholder="password">
+            <input type="submit" class="submit">
+            </form>
+
+     
+            <% if flash[:login_errors] %>
+                <% flash[:login_errors].each do |error| %>
+                <p><%= error %></p>
+            <% end %>
+      
+    </div>
+
+</div>
+):
+1:    <div id="user_login">
+2:        <div class="new_user">
+3:            <h1> Create a User </h1>
+4:    
+5:            <%= render partial: "shared/error_list", locals: {new_object: @user}%>
+6:    
+7:            <%= form_for @user do |f| %>
+8:                <%= f.label :name %>
+9:                <%= f.text_field :name %>
+10:                <%= f.label :email %>
+11:                <%= f.text_field :email %>
+12:                <%= f.label "Enter Password" %>
+13:                <%= f.text_field :password %>
+14:                <%= f.label "Confirm Password" %>
+15:                <%= f.text_field :password_confirmation %>
+16:                <%= f.submit "Join FOG" %>
+17:            <% end %>
+18:        </div>
+19:        <div class="log_in">
+20:                <form action="/sessions" method="POST">
+21:                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+22:                <input type="email" name="login[email]" placeholder="email">
+23:                <input type="password" name="login[password]" placeholder="password">
+24:                <input type="submit" class="submit">
+25:                </form>
+26:    
+27:         
+28:                <% if flash[:login_errors] %>
+29:                    <% flash[:login_errors].each do |error| %>
+30:                    <p><%= error %></p>
+31:                <% end %>
+32:          
+33:        </div>
+34:    
+35:    </div>
+  
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/users/new.html.erb:37: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/new" for ::1 at 2020-04-08 23:42:28 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.2ms | Allocations: 169)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7464)
+
+
+Started POST "/sessions" for ::1 at 2020-04-08 23:42:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"aBj+52Na/fvWn0pnRX616i+OsYOM4dA/GIWMCcdVv90LFtRy1MN3UkaWYFGSw65y+ZnXpeCLvqq8i01J6XV0TQ==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 199ms (ActiveRecord: 0.1ms | Allocations: 946)
+
+
+Started GET "/users/new" for ::1 at 2020-04-08 23:42:32 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1092)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 5695)
+
+
+Started POST "/sessions" for ::1 at 2020-04-08 23:42:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"xclwjxgOIH0iaEXSvz2qTOVlJOBbBq6xUxZwcYkoD2imx1oar5eq1LJhb+RogLHUM3JCxjdswCT3GLExpwjE+A==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 207ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:42:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 960)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 6188)
+
+
+Started GET "/games" for ::1 at 2020-04-08 23:43:15 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4159)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 10659)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 23:43:20 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 8918)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 23:45:08 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:44:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1201)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 7325)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 23:50:30 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:50:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 105.3ms | Allocations: 80556)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.2ms | Allocations: 86771)
+
+
+  
+ActionView::Template::Error (undefined method `buy_game_path' for #<#<Class:0x00007fc8d41c7df8>:0x00007fc8d41cca38>
+Did you mean?  new_game_path):
+     8: <%= link_to "Edit Game", edit_game_path(@game) %> |
+     9: <%= link_to "Delete Game", game_path(@game), :method => :delete %>
+    10: <% if session[:user_id] %>
+    11:     <%= link_to "Buy Game", buy_game_path(@game), :method => :post %>
+    12:     <p>Buy This Game</p>
+    13: <% end %>
+    14: 
+  
+app/views/games/show.html.erb:11
+Started GET "/games/1" for ::1 at 2020-04-08 23:52:16 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:50:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1250)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 7371)
+
+
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:52:20 -0400
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"vzjxM+E6Zq1ZN02eO0j8uomeMbgJUAUdkzKJzYdBflfcNtumVqPsBMk+Z6js9eciX4lXnmU6a4g3PEiNqWG1xw==", "id"=>"1"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:50:in `find_game'
+Completed 500 Internal Server Error in 42950ms (ActiveRecord: 0.2ms | Allocations: 49886)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `buy'
+app/controllers/games_controller.rb:44:in `buy'
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:54:13 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"vzjxM+E6Zq1ZN02eO0j8uomeMbgJUAUdkzKJzYdBflfcNtumVqPsBMk+Z6js9eciX4lXnmU6a4g3PEiNqWG1xw==", "id"=>"1"}
+Completed 500 Internal Server Error in 81547ms (ActiveRecord: 0.0ms | Allocations: 247517)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `buy'
+app/controllers/games_controller.rb:44:in `buy'
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:55:43 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/alexduterte/Development/code/CRUD_rails_Fog_App/app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+...rary.create(game: game user_id: user)
+...                       ^~~~~~~~
+/Users/alexduterte/Development/code/CRUD_rails_Fog_App/app/controllers/games_controller.rb:57: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/games_controller.rb:57: syntax error, unexpected end-of-input, expecting end
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/games_controller.rb:57: syntax error, unexpected end-of-input, expecting end
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/games_controller.rb:57: syntax error, unexpected end-of-input, expecting end
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:56:28 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/alexduterte/Development/code/CRUD_rails_Fog_App/app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+...rary.create(game: game user_id: user)
+...                       ^~~~~~~~):
+  
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+app/controllers/games_controller.rb:46: syntax error, unexpected tLABEL, expecting do or '{' or '('
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:56:44 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"vzjxM+E6Zq1ZN02eO0j8uomeMbgJUAUdkzKJzYdBflfcNtumVqPsBMk+Z6js9eciX4lXnmU6a4g3PEiNqWG1xw==", "id"=>"1"}
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mLibrary Create (1.1ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["game_id", 1], ["created_at", "2020-04-09 03:56:46.794808"], ["updated_at", "2020-04-09 03:56:46.794808"]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 450ms (ActiveRecord: 30.0ms | Allocations: 5136098)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:56:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.0ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 87.1ms | Allocations: 1000411)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 271ms (Views: 229.8ms | ActiveRecord: 5.4ms | Allocations: 3055764)
+
+
+Started GET "/games" for ::1 at 2020-04-08 23:57:33 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 34.4ms | Allocations: 411556)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 152.2ms | ActiveRecord: 1.1ms | Allocations: 1672349)
+
+
+Started GET "/games/1" for ::1 at 2020-04-08 23:57:35 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  Rendered games/show.html.erb within layouts/application (Duration: 47.6ms | Allocations: 558514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 128.8ms | ActiveRecord: 1.8ms | Allocations: 1919004)
+
+
+Started POST "/games/1/buy" for ::1 at 2020-04-08 23:57:37 -0400
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"7S0IV3PA2D7QDyVnhjNx/5O2TORQ+ZfjSs2j8IHWjiWOIyLCxFlSl0AGD1FRjmpnRaEqwjyT+Xbuw2Kwr/ZFtQ==", "id"=>"1"}
+  [1m[36mGame Load (4.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mLibrary Create (4.3ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["game_id", 1], ["created_at", "2020-04-09 03:57:37.132458"], ["updated_at", "2020-04-09 03:57:37.132458"]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 123ms (ActiveRecord: 14.6ms | Allocations: 1460098)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:57:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.8ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (4.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mCACHE Game Load (0.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 97.1ms | Allocations: 1196952)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 236ms (Views: 203.5ms | ActiveRecord: 5.8ms | Allocations: 2929785)
+
+
+Started DELETE "/libraries/10" for ::1 at 2020-04-08 23:57:40 -0400
+Processing by LibrariesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L91ZqqeHxpfWi8Edv2Bjfi2mHK797UMChAQWziA28tFM03M/EB5MPkaC6yto3Xjm+7F6iJGHLZcgCteODhY5QQ==", "id"=>"10"}
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:8:in `destroy'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:9:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[36mLibrary Destroy (4.4ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 104ms (ActiveRecord: 8.1ms | Allocations: 1193165)
+
+
+Started GET "/users/4" for ::1 at 2020-04-08 23:57:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.8ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 68.5ms | Allocations: 852461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 214ms (Views: 183.5ms | ActiveRecord: 2.5ms | Allocations: 2610476)
+
+
+Started GET "/games" for ::1 at 2020-04-08 23:59:49 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 35.7ms | Allocations: 463520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 149.7ms | ActiveRecord: 1.0ms | Allocations: 2043709)
+
+
+Started GET "/games/2" for ::1 at 2020-04-08 23:59:51 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 2]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ? LIMIT ?[0m  [["game_id", 2], ["LIMIT", 11]]
+  Rendered games/show.html.erb within layouts/application (Duration: 268.5ms | Allocations: 3831219)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 3.0ms | Allocations: 4377164)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<User::ActiveRecord_Associations_CollectionProxy:0x00007fc8d5148610>
+Did you mean?  ids):
+     7: 
+     8: <%= link_to "Edit Game", edit_game_path(@game) %> |
+     9: <%= link_to "Delete Game", game_path(@game), :method => :delete %>
+    10: <% if session[:user_id] && !@game.users.id.include?(session[:user_id]) %>
+    11:     <%= link_to "Buy Game", "/games/#{@game.id}/buy", :method => :post %>
+    12:     <p>Buy This Game</p>
+    13: <% end %>
+  
+app/views/games/show.html.erb:10
+Started GET "/games/2" for ::1 at 2020-04-09 00:00:10 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (4.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 2]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 2]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 71.1ms | Allocations: 859536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 183.7ms | ActiveRecord: 6.4ms | Allocations: 2626946)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:00:17 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 40.3ms | Allocations: 463516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 132.7ms | ActiveRecord: 1.0ms | Allocations: 1856540)
+
+
+Started GET "/games/1" for ::1 at 2020-04-09 00:00:18 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 1]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 68.5ms | Allocations: 801542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 195ms (Views: 159.5ms | ActiveRecord: 5.9ms | Allocations: 2348661)
+
+
+Started GET "/games/2" for ::1 at 2020-04-09 00:00:21 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 2]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 2]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 66.8ms | Allocations: 818806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 200ms (Views: 161.9ms | ActiveRecord: 2.8ms | Allocations: 2365927)
+
+
+Started GET "/users" for ::1 at 2020-04-09 00:00:27 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 30.6ms | Allocations: 377426)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 160ms (Views: 137.9ms | ActiveRecord: 1.2ms | Allocations: 1862870)
+
+
+Started GET "/users/4" for ::1 at 2020-04-09 00:00:30 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 63.1ms | Allocations: 775044)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 200ms (Views: 159.2ms | ActiveRecord: 2.7ms | Allocations: 2353162)
+
+
+Started GET "/users/4/edit" for ::1 at 2020-04-09 00:00:32 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 214.6ms | Allocations: 2844777)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 375ms (Views: 311.7ms | ActiveRecord: 2.8ms | Allocations: 4713900)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:01:24 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 434734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 119.1ms | ActiveRecord: 1.0ms | Allocations: 1794640)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:07:19 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (4.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 89.3ms | Allocations: 1230280)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 4.1ms | Allocations: 2348520)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Fog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <body style="height: 100%">
+    <div id="nav">
+      <div id="nav_logo">
+        <a href="/"><%= image_tag 'fog_logo.png' %></a><div style="float: right; padding-top: 8px; font-size: 30px;">FOG GAMES</div>
+      </div>
+      <div id="nav_links">
+        <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %><% if session[:user_id] %> | <%= link_to "Log Out", "logout", :method => :post %>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Fog</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      
+12:      <body style="height: 100%">
+13:        <div id="nav">
+14:          <div id="nav_logo">
+15:            <a href="/"><%= image_tag 'fog_logo.png' %></a><div style="float: right; padding-top: 8px; font-size: 30px;">FOG GAMES</div>
+16:          </div>
+17:          <div id="nav_links">
+18:            <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %><% if session[:user_id] %> | <%= link_to "Log Out", "logout", :method => :post %>
+19:          </div>
+20:        </div>
+21:        <%= yield %>
+22:      </body>
+23:    </html>
+  
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-04-09 00:07:27 -0400
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 210.9ms | Allocations: 2674855)
+Completed 500 Internal Server Error in 1249ms (ActiveRecord: 0.0ms | Allocations: 15130280)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>Fog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <body style="height: 100%">
+    <div id="nav">
+      <div id="nav_logo">
+        <a href="/"><%= image_tag 'fog_logo.png' %></a><div style="float: right; padding-top: 8px; font-size: 30px;">FOG GAMES</div>
+      </div>
+      <div id="nav_links">
+        <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %><% if session[:user_id] %> | <%= link_to "Log Out", "logout", :method => :post %>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>Fog</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:      
+12:      <body style="height: 100%">
+13:        <div id="nav">
+14:          <div id="nav_logo">
+15:            <a href="/"><%= image_tag 'fog_logo.png' %></a><div style="float: right; padding-top: 8px; font-size: 30px;">FOG GAMES</div>
+16:          </div>
+17:          <div id="nav_links">
+18:            <%= link_to "HOME", home_path %> | <%= link_to "All Users", users_path %> | <%= link_to "All Games", games_path %> | <%= link_to "Add Game", new_game_path %> | <%= link_to "Join FOG", new_user_path %><% if session[:user_id] %> | <%= link_to "Log Out", "logout", :method => :post %>
+19:          </div>
+20:        </div>
+21:        <%= yield %>
+22:      </body>
+23:    </html>
+  
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+app/views/layouts/application.html.erb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-04-09 00:07:55 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 27.0ms | Allocations: 333570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 308ms (Views: 285.4ms | ActiveRecord: 0.0ms | Allocations: 3532219)
+
+
+Started POST "/logout" for ::1 at 2020-04-09 00:08:01 -0400
+  
+ActionController::RoutingError (uninitialized constant SessionController
+Did you mean?  SessionsController):
+  
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-09 00:08:25 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 107.3ms | ActiveRecord: 0.0ms | Allocations: 1411291)
+
+
+Started POST "/logout" for ::1 at 2020-04-09 00:08:30 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wcC5mLJswGZ4FhFIZ9uzsLnSIdwLK/LF5PY4JmSqDQyizpMNBfVKz+gfO36wZqgob8VH+mdBnFBA+PlmSorGnA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms | Allocations: 294880)
+
+
+Started GET "/" for ::1 at 2020-04-09 00:08:30 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 3.6ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 104.8ms | ActiveRecord: 0.0ms | Allocations: 1354997)
+
+
+Started GET "/users/new" for ::1 at 2020-04-09 00:08:33 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 5.7ms | Allocations: 44062)
+  Rendered users/new.html.erb within layouts/application (Duration: 77.4ms | Allocations: 991224)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 348ms (Views: 179.0ms | ActiveRecord: 11.3ms | Allocations: 4238758)
+
+
+Started POST "/sessions" for ::1 at 2020-04-09 00:08:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Qno9XmLbckVfeoooxbYWCrGr2yveYk5isjaWm7W37NohdBfL1UL47M9zoB4SCw2SZ7y9DbIIIPcWOFfbm5cnSg==", "login"=>{"email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alexduterte@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 243ms (ActiveRecord: 1.1ms | Allocations: 667864)
+
+
+Started GET "/users/4" for ::1 at 2020-04-09 00:08:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 301.4ms | Allocations: 3683016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 441ms (Views: 382.3ms | ActiveRecord: 17.6ms | Allocations: 5376209)
+
+
+Started GET "/users/4/edit" for ::1 at 2020-04-09 00:09:01 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/edit.html.erb within layouts/application
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT "games".* FROM "games" INNER JOIN "libraries" ON "games"."id" = "libraries"."game_id" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/edit.html.erb:9
+  [1m[36mGame Load (3.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/users/edit.html.erb:9
+  Rendered users/edit.html.erb within layouts/application (Duration: 98.6ms | Allocations: 1228577)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 264ms (Views: 185.5ms | ActiveRecord: 8.7ms | Allocations: 3161433)
+
+
+Started PATCH "/users/4" for ::1 at 2020-04-09 00:09:11 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"9i40ApahljbiGja0wnsDrCnkoc9RkvSQL/PMNXWOc4RrpE89t5GOp5dJWqLyrZxZ3Obht3fbZodn9ZITW+N5Iw==", "user"=>{"name"=>"NFamous Wun", "game_ids"=>"1"}, "commit"=>"update user", "id"=>"4"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  [1m[36mGame Load (4.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[36mLibrary Create (1.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["game_id", 1], ["created_at", "2020-04-09 04:09:11.372461"], ["updated_at", "2020-04-09 04:09:11.372461"]]
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:53:in `update'
+  [1m[36mUser Exists? (4.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "nfamouswun"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:53:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:53:in `update'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:54:in `update'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "NFamous Wun"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:54:in `update'
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "NFamous Wun"], ["updated_at", "2020-04-09 04:09:11.573150"], ["id", 4]]
+  ↳ app/controllers/users_controller.rb:54:in `update'
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:54:in `update'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 1123ms (ActiveRecord: 25.0ms | Allocations: 5808658)
+
+
+Started GET "/users/4" for ::1 at 2020-04-09 00:09:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  [1m[36mCACHE Game Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 103.2ms | Allocations: 1173525)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 237ms (Views: 196.9ms | ActiveRecord: 5.9ms | Allocations: 2742566)
+
+
+Started DELETE "/libraries/12" for ::1 at 2020-04-09 00:09:15 -0400
+Processing by LibrariesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VYVMWnR/S9BzLwqt0ZoTyHKGy9iMipq0S8/KMoze6A42i2bPw+bBeeMmIJsGJwhQpJGt/uDg9CHvwQtyov4jng==", "id"=>"12"}
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:8:in `destroy'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/libraries_controller.rb:9:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[36mLibrary Destroy (1.5ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/libraries_controller.rb:10:in `destroy'
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 135ms (ActiveRecord: 5.9ms | Allocations: 1494360)
+
+
+Started GET "/users/4" for ::1 at 2020-04-09 00:09:15 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 90.5ms | Allocations: 959333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 268ms (Views: 231.0ms | ActiveRecord: 2.9ms | Allocations: 2986848)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Destroy (0.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mLibrary Load (0.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.3ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.3ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLibrary Destroy (0.2ms)[0m  [1m[31mDELETE FROM "libraries" WHERE "libraries"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "T"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Deijah"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "NBA2k20"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "NBA2k20"], ["created_at", "2020-04-09 04:18:14.741123"], ["updated_at", "2020-04-09 04:18:14.741123"], ["img", "https://images.greenmangaming.com/bf2362b610e74fc3b79b44feb1553190/6a8ffa8d91e44dfa891cf20d8c224366.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Doom"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "Doom"], ["created_at", "2020-04-09 04:18:14.745213"], ["updated_at", "2020-04-09 04:18:14.745213"], ["img", "https://images.greenmangaming.com/e55c1f8dcad74eec911133e93609cf71/dcd1a7d6345f4bf88d6d4b7d96f134a7.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "The Division 2"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "The Division 2"], ["created_at", "2020-04-09 04:18:14.748859"], ["updated_at", "2020-04-09 04:18:14.748859"], ["img", "https://images.greenmangaming.com/621af423456d4194bc8578b1ab05250b/897b18c633c74e72a0948ff57ac1a4cd.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Mariot Kart"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "Mariot Kart"], ["created_at", "2020-04-09 04:18:14.752463"], ["updated_at", "2020-04-09 04:18:14.752463"], ["img", "https://cdn-cf.gamivo.com/image_original.jpg?f=67253&n=a8e136b0-6331-11e9-ba4a-e3ae060f3896.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Animal Crossing"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "Animal Crossing"], ["created_at", "2020-04-09 04:18:14.756069"], ["updated_at", "2020-04-09 04:18:14.756069"], ["img", "https://i.ytimg.com/vi/sRWjpjNVOCM/maxresdefault.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGame Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "games" WHERE LOWER("games"."title") = LOWER(?) LIMIT ?[0m  [["title", "Outlast"], ["LIMIT", 1]]
+  [1m[36mGame Create (0.2ms)[0m  [1m[32mINSERT INTO "games" ("title", "created_at", "updated_at", "img") VALUES (?, ?, ?, ?)[0m  [["title", "Outlast"], ["created_at", "2020-04-09 04:18:14.759736"], ["updated_at", "2020-04-09 04:18:14.759736"], ["img", "https://images.greenmangaming.com/1edbba5771f74ffabb9b99ae97a09e09/3abdec6122ab427ab6c80607fdb4db1f.jpg"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "T"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 7], ["created_at", "2020-04-09 04:18:14.767197"], ["updated_at", "2020-04-09 04:18:14.767197"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "T"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 8], ["created_at", "2020-04-09 04:18:14.771716"], ["updated_at", "2020-04-09 04:18:14.771716"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "T"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 9], ["created_at", "2020-04-09 04:18:14.776172"], ["updated_at", "2020-04-09 04:18:14.776172"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 8], ["created_at", "2020-04-09 04:18:14.780594"], ["updated_at", "2020-04-09 04:18:14.780594"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 9], ["created_at", "2020-04-09 04:18:14.784956"], ["updated_at", "2020-04-09 04:18:14.784956"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Alex"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 10], ["created_at", "2020-04-09 04:18:14.788862"], ["updated_at", "2020-04-09 04:18:14.788862"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Deijah"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 9], ["created_at", "2020-04-09 04:18:14.792739"], ["updated_at", "2020-04-09 04:18:14.792739"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Deijah"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.2ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 11], ["created_at", "2020-04-09 04:18:14.798189"], ["updated_at", "2020-04-09 04:18:14.798189"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "Deijah"], ["LIMIT", 1]]
+  [1m[36mLibrary Create (0.3ms)[0m  [1m[32mINSERT INTO "libraries" ("game_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["game_id", 12], ["created_at", "2020-04-09 04:18:14.802839"], ["updated_at", "2020-04-09 04:18:14.802839"]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/4" for ::1 at 2020-04-09 00:18:20 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+Completed 404 Not Found in 29ms (ActiveRecord: 3.7ms | Allocations: 363911)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/users_controller.rb:73:in `find_user'
+Started GET "/" for ::1 at 2020-04-09 00:18:24 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 146ms (Views: 132.1ms | ActiveRecord: 0.0ms | Allocations: 1696819)
+
+
+Started GET "/users/" for ::1 at 2020-04-09 00:18:33 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 221062)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 157ms (Views: 131.3ms | ActiveRecord: 1.5ms | Allocations: 1640313)
+
+
+Started GET "/" for ::1 at 2020-04-09 00:18:39 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 94.5ms | ActiveRecord: 0.0ms | Allocations: 1369738)
+
+
+Started GET "/users/new" for ::1 at 2020-04-09 00:18:40 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 0.6ms | Allocations: 13394)
+  Rendered users/new.html.erb within layouts/application (Duration: 65.0ms | Allocations: 748593)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 186ms (Views: 166.1ms | ActiveRecord: 0.0ms | Allocations: 2137973)
+
+
+Started POST "/users" for ::1 at 2020-04-09 00:18:53 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"mKNOd2aOQZQVHLqtgqDO0lvP8K4qTytXPrXu95x6g4g+OaVulgUcPewNt4j2CjncXVztB2PdW/L+CJm2AkRlxw==", "user"=>{"name"=>"NFamous Wun", "email"=>"alexduterte@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Join FOG"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "NFamous Wun"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "NFamous Wun"], ["created_at", "2020-04-09 04:18:53.696116"], ["updated_at", "2020-04-09 04:18:53.696116"], ["email", "alexduterte@gmail.com"], ["password_digest", "$2a$12$DgyA8C01l9ZwLIm0ndorT.FXK.Kx8cwCbwaQjEKuE5TEpJ8Qg6sfi"]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "NFamous Wun"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[36mCACHE User Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "NFamous Wun"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 413ms (ActiveRecord: 5.9ms | Allocations: 2474438)
+
+
+Started GET "/users/5" for ::1 at 2020-04-09 00:18:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 39.6ms | Allocations: 440182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 276ms (Views: 241.0ms | ActiveRecord: 2.0ms | Allocations: 2614288)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:18:56 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 467982)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 172ms (Views: 146.4ms | ActiveRecord: 1.2ms | Allocations: 1987223)
+
+
+Started GET "/games/8" for ::1 at 2020-04-09 00:18:58 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 8]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 8]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 78.8ms | Allocations: 919396)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 211ms (Views: 169.2ms | ActiveRecord: 6.2ms | Allocations: 2517612)
+
+
+Started POST "/games/8/buy" for ::1 at 2020-04-09 00:19:00 -0400
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"RzvGB0whAEZAxmsBxHQP6SdppcVlH57BgIbYNht1EcIkNeyS+7iK79DPQTcTyRRx8X7D4wl18FQkiBl2NVXaUg==", "id"=>"8"}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mLibrary Create (4.5ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["game_id", 8], ["created_at", "2020-04-09 04:19:00.963009"], ["updated_at", "2020-04-09 04:19:00.963009"]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 168ms (ActiveRecord: 8.9ms | Allocations: 1875481)
+
+
+Started GET "/users/5" for ::1 at 2020-04-09 00:19:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (3.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (3.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 92.3ms | Allocations: 1072097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 245ms (Views: 192.7ms | ActiveRecord: 11.7ms | Allocations: 2818932)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:19:18 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 35.1ms | Allocations: 434726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 154ms (Views: 132.6ms | ActiveRecord: 3.7ms | Allocations: 1811292)
+
+
+Started GET "/games/11" for ::1 at 2020-04-09 00:19:19 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 11]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 11]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 63.6ms | Allocations: 816525)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 139.5ms | ActiveRecord: 2.9ms | Allocations: 2379423)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:19:21 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 39.4ms | Allocations: 434728)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 165ms (Views: 143.2ms | ActiveRecord: 1.0ms | Allocations: 1811286)
+
+
+Started GET "/games/10" for ::1 at 2020-04-09 00:19:23 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mGame Load (4.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 10]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 10]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 65.7ms | Allocations: 816527)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 198ms (Views: 156.6ms | ActiveRecord: 9.6ms | Allocations: 2382244)
+
+
+Started GET "/" for ::1 at 2020-04-09 00:19:34 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 9756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 98.5ms | ActiveRecord: 0.0ms | Allocations: 1369241)
+
+
+Started POST "/logout" for ::1 at 2020-04-09 00:28:50 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MhoRnLzX5oSd2zuOJAQ0x5l7bKXVnwobdK2t031UNt5RFDsJC05sLQ3SEbjzuS9fT2wKg7n1ZI7Qo2yTU3T9Tg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms | Allocations: 293539)
+
+
+Started GET "/" for ::1 at 2020-04-09 00:28:50 -0400
+Processing by ApplicationController#home as HTML
+  Rendering application/home.html.erb within layouts/application
+  Rendered application/home.html.erb within layouts/application (Duration: 4.7ms | Allocations: 27640)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 113.8ms | ActiveRecord: 0.0ms | Allocations: 1538917)
+
+
+Started GET "/users/new" for ::1 at 2020-04-09 00:28:53 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 2.3ms | Allocations: 44062)
+  Rendered users/new.html.erb within layouts/application (Duration: 76.1ms | Allocations: 886844)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 183.8ms | ActiveRecord: 0.0ms | Allocations: 2395196)
+
+
+Started GET "/users/new" for ::1 at 2020-04-09 00:31:04 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_list.html.erb (Duration: 5.1ms | Allocations: 44062)
+  Rendered users/new.html.erb within layouts/application (Duration: 213.6ms | Allocations: 2433052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 356ms (Views: 331.2ms | ActiveRecord: 0.0ms | Allocations: 4034336)
+
+
+Started POST "/users" for ::1 at 2020-04-09 00:31:24 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"zrMPameKqWRyULATHiom6haHhxTb7P9RVh5lpe63lLWtvSX/0BMjzeJZmiXJlz1ywJDhMreGkcTyEKTlwJdfJQ==", "user"=>{"name"=>"DJ Deijah", "email"=>"dd@dev.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Join FOG"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "DJ Deijah"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "email", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "DJ Deijah"], ["created_at", "2020-04-09 04:31:25.250010"], ["updated_at", "2020-04-09 04:31:25.250010"], ["email", "dd@dev.com"], ["password_digest", "$2a$12$eq5B6jA1ZcfZKCOcAsXDvuy2mppAfw26dqbMrk0AjAkFaGlHuMWQO"]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "DJ Deijah"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[36mCACHE User Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["name", "DJ Deijah"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 417ms (ActiveRecord: 9.5ms | Allocations: 2441980)
+
+
+Started GET "/users/6" for ::1 at 2020-04-09 00:31:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (1.1ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 6]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 51.2ms | Allocations: 551256)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 290ms (Views: 250.4ms | ActiveRecord: 2.3ms | Allocations: 2736813)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:31:32 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 37.4ms | Allocations: 467981)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 148ms (Views: 125.1ms | ActiveRecord: 1.2ms | Allocations: 1973578)
+
+
+Started GET "/games/12" for ::1 at 2020-04-09 00:31:38 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 12]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 12]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 70.9ms | Allocations: 857254)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 206ms (Views: 166.5ms | ActiveRecord: 5.9ms | Allocations: 2455164)
+
+
+Started POST "/games/12/buy" for ::1 at 2020-04-09 00:31:40 -0400
+Processing by GamesController#buy as HTML
+  Parameters: {"authenticity_token"=>"wYHhP1SSPj7KEhmwRGoIIlYDxm5kA5oFU7VQ4KzcugCij8uq4wu0l1obM4aT1xO6gBSgSAhp9JD3u5GggvxxkA==", "id"=>"12"}
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[36mLibrary Create (1.2ms)[0m  [1m[32mINSERT INTO "libraries" ("user_id", "game_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["game_id", 12], ["created_at", "2020-04-09 04:31:40.782301"], ["updated_at", "2020-04-09 04:31:40.782301"]]
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/games_controller.rb:46:in `buy'
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 146ms (ActiveRecord: 9.2ms | Allocations: 1661134)
+
+
+Started GET "/users/6" for ::1 at 2020-04-09 00:31:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73:in `find_user'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mLibrary Load (0.9ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."user_id" = ?[0m  [["user_id", 6]]
+  ↳ app/views/users/show.html.erb:6
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:7
+  Rendered users/show.html.erb within layouts/application (Duration: 63.8ms | Allocations: 737247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 915ms (Views: 876.3ms | ActiveRecord: 2.9ms | Allocations: 3044393)
+
+
+Started GET "/games" for ::1 at 2020-04-09 00:31:48 -0400
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/games/index.html.erb:3
+  Rendered games/index.html.erb within layouts/application (Duration: 35.4ms | Allocations: 434726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 130.9ms | ActiveRecord: 3.7ms | Allocations: 1811291)
+
+
+Started GET "/games/12" for ::1 at 2020-04-09 00:31:49 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/games_controller.rb:52:in `find_game'
+  Rendering games/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 12]]
+  ↳ app/views/games/show.html.erb:5
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "users"."id" FROM "users" INNER JOIN "libraries" ON "users"."id" = "libraries"."user_id" WHERE "libraries"."game_id" = ?[0m  [["game_id", 12]]
+  ↳ app/views/games/show.html.erb:10
+  Rendered games/show.html.erb within layouts/application (Duration: 68.3ms | Allocations: 800402)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 174.2ms | ActiveRecord: 2.9ms | Allocations: 2367009)
+
+

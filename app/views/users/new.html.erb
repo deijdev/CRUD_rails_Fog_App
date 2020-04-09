@@ -1,9 +1,36 @@
-<h1> Create a User </h1>
+<div id="user_login">
+    <div class="new_user">
+        <h1> Create a User </h1>
 
-<%= render partial: "shared/error_list", locals: {new_object: @user}%>
+        <%= render partial: "shared/error_list", locals: {new_object: @user}%>
 
-    <%= form_for @user do |f| %>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-        <%= f.submit "Join FOG" %>
+        <%= form_for @user do |f| %>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+            <%= f.label "Enter Password" %>
+            <%= f.password_field :password, placeholder:"password" %>
+            <%= f.label "Confirm Password" %>
+            <%= f.password_field :password_confirmation, placeholder:"password" %>
+            <%= f.submit "Join FOG" %>
         <% end %>
+    </div>
+    <div class="log_in">
+            <form action="/sessions" method="POST">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="email" name="login[email]" placeholder="email">
+            <input type="password" name="login[password]" placeholder="password">
+            <input type="submit" class="submit">
+            </form>
+
+        <div class="errors">
+            <% if flash[:login_errors] %>
+                <% flash[:login_errors].each do |error| %>
+                    <p><%= error %></p>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+
+</div>
