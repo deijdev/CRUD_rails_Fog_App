@@ -122,9 +122,9 @@ body {
     margin-top: -25px;
     margin-bottom: 5px;
 }
-#user_games img:hover {
+/* #user_games img:hover {
     width: 400px;
-}
+} */
 
 
 .error {
@@ -133,4 +133,22 @@ body {
 
 .field_with_errors {
     border-color: red;
+}
+
+#user_login {
+   
+   width:60%;
+   margin: auto;
+   text-align: center;
+   
+}
+div.new_user {
+    float: left;
+    margin-top: -25px;
+    
+    
+  
+}
+div.log_in {
+   
 }
