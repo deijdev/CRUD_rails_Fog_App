@@ -12,6 +12,16 @@ class SessionsController < ApplicationController
         end
     end
 
+    # def create 
+    #     @user = User.find_by(name: params[:user][:name])
+    #     if @user && @user.authenticate(params[:user][:password])
+    #         session[:user_id] = @user.id
+    #         redirect_to controller: 'welcome', action: 'home'
+    #     else
+    #         render :new
+    #     end
+    # end
+
     def destroy
         session[:user_id] = nil
         redirect_to "/"
@@ -20,6 +30,6 @@ class SessionsController < ApplicationController
     private
 
     def login_params
-        params.require(:login).permit(:email, :password)
+        params.require(:user).permit(:email, :password)
     end
 end

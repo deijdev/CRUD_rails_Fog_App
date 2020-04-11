@@ -4,12 +4,13 @@
     
 <p><%= @game.users.count %> user(s) have added this game.</p>
 
-
-<%= link_to "Edit Game", edit_game_path(@game) %> |
-<%= link_to "Delete Game", game_path(@game), :method => :delete %>
-<% if session[:user_id] && !@game.users.ids.include?(session[:user_id]) %>
+<% if @current && @current.admin %>
+    <%= link_to "Edit Game", edit_game_path(@game) %> |
+    <%= link_to "Delete Game", game_path(@game), :method => :delete %> |
+<% end %>
+<% if @current && !@game.users.include?(@current) %>
     <%= link_to "Buy Game", "/games/#{@game.id}/buy", :method => :post %>
-    <p>Buy This Game</p>
+    
 <% end %>
 
 </div>

@@ -1,5 +1,5 @@
 class LibrariesController < ApplicationController
-
+    # before_action :set_current_user
     def show 
         @library = Library.find(params[:id])
     end

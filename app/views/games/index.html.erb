@@ -4,5 +4,6 @@
         <div><%= link_to game.title, game_path(game) %></div>
     <% end %>
 
-
-<%= link_to "Add Game", new_game_path %>
+<% if @current && @current.admin %>
+<BR><%= link_to "Add Game", new_game_path %>
+<% end %>

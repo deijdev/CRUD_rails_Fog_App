@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
     before_action :find_game, only: [:show, :edit]
-
+    # before_action :set_current_user
     def index 
         @games = Game.all
     end

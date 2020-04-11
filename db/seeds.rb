@@ -9,9 +9,10 @@ User.destroy_all
 Game.destroy_all
 Library.destroy_all
 
-user1 = User.create(name: "T", email: "tzips@dd.com", password_digest: BCrypt::Password.create('password'))
-user2 = User.create(name: "Alex", email: "dd@dd.com", password_digest: BCrypt::Password.create('password'))
-user3 = User.create(name: "Deijah", email: "alexduterte@gmail.com", password_digest: BCrypt::Password.create('password'))
+user1 = User.create(name: "T", email: "tzips@dd.com", password_digest: BCrypt::Password.create('password'), admin: true)
+user2 = User.create(name: "Deijah", email: "dd@dd.com", password_digest: BCrypt::Password.create('password'), admin: true)
+user3 = User.create(name: "Alex", email: "alexduterte@gmail.com", password_digest: BCrypt::Password.create('password'), admin: true)
+user4 = User.create(name: "F1lthyN00B", email: "noob@noob.com", password_digest: BCrypt::Password.create('password'))
 
 
 game1 = Game.create(title: "NBA2k20", img: "https://images.greenmangaming.com/bf2362b610e74fc3b79b44feb1553190/6a8ffa8d91e44dfa891cf20d8c224366.jpg")
