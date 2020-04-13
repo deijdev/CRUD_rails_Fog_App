@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :friends
   resources :games
   resources :libraries
   resources :users
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   post '/login', to: "sessions#create"
   post 'games/:id/buy', to: "games#buy"
-  post 'logout', to: "sessions#destroy"
-
+  post '/logout', to: "sessions#destroy", as: "logout"
+  post '/add_friend/:id', to: "users#add_friend", as: 'add_friend'
 
 end

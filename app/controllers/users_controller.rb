@@ -51,6 +51,13 @@ class UsersController < ApplicationController
         redirect_to users_path
     end
 
+    def add_friend 
+        @user = User.find(params[:id])
+        Friend.create(myself: @current, friend: @user)
+        Friend.create(myself: @user, friend: @current)
+        redirect_to user_path(@user)
+    end
+
     private 
 
     def user_params
